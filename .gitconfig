@@ -1,0 +1,7 @@
+[user]
+	name = Himavanth
+	email = himavanth.reddy19@gmail.com
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	co = checkout
