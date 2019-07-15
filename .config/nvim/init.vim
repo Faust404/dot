@@ -27,20 +27,6 @@ nnoremap <Leader>s :set invspell<CR>
 " Enable folding with the spacebar
 nnoremap <space> za
 
-" Latex settings
-let g:tex_flavor = 'latex'
-let g:vimtex_view_method = 'zathura'
-if has('nvim')
-  let g:vimtex_compiler_progname = 'nvr'
-endif
-set conceallevel=1
-let g:tex_conceal='abdmg'
-
-" Neotex Settings
-let g:neotex_enabled = 2
-let g:neotex_latexdiff = 1
-let g:neotex_delay = 400
-
 " Path to custom snippets
 let g:UltiSnipsSnippetDirectories=["/home/himavanth/.config/nvim/plugins/UltiSnips/mysnippets"]
 
