@@ -3,7 +3,6 @@
 #
 
 eval "$(fasd --init auto)"
-eval $(thefuck --alias fuck)
 # If not running interactively, don't do anything
  [[ $- != *i* ]] && return
 
@@ -25,40 +24,20 @@ alias .....='cd ../../../..'
 
 # Do not delete / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
- 
-# Confirmation 
+
+# Confirmation
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
 
 alias e='nvim'
-alias r='ranger'
-alias zt='zathura'
-alias rmd='rm -rfv'
+alias rmd='rm -rf'
 alias mkd='mkdir -pv'
-alias wifi='nmcli device wifi list'
-alias gg='sudo shutdown now'
 alias eb='vim ~/.bashrc'
 alias sb='source ~/.bashrc'
 
 alias ping='ping -c 5'
 alias pingg='ping -c 5 google.com'
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
-
-# Pacman abbrevations
-alias pacman='sudo pacman'
-alias pi='pacman -S'
-alias pr='pacman -R'
-alias pq='pacman -Q'
-alias ps='pacman -Ss'
-alias pu='pacman -Syu'
-
-alias ys='yay -S'
-alias yr='yay -R'
-alias yss='yay -Ss'
-
-alias lock='i3lock-fancy'
 
 alias tree="tree -A"
 alias treed="tree -d"
@@ -66,5 +45,10 @@ alias tree1="tree -d -L 1"
 alias tree2="tree -d -L 2"
 
 alias ipl="ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'"
-alias speedtest='curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -'
-alias week='date +%v'
+alias week='date +%V'
+
+alias python='/usr/bin/python3.6'
+
+export http_proxy=http://inban1b-proxy.apac.nsn-net.net:8080
+export ftp_proxy=http://inban1b-proxy.apac.nsn-net.net:8080
+export https_proxy=https://inban1b-proxy.apac.nsn-net.net:8080
