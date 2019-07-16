@@ -5,9 +5,13 @@
 	helper = cache --timeout=3600
 [alias]
 	co = checkout
+    ci = commit
 	cm = commit -m
+	cam = commit -am
 	st = status
 	df = diff
+    br = branch
+    last = log -1 HEAD
 	lpr = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 	lgraph = log --graph --abbrev-commit --date=relative
     unstage = reset HEAD --
